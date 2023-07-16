@@ -24,6 +24,7 @@
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
+
 }
 
 nav {
@@ -54,7 +55,7 @@ nav a {
     color: #424242;
 }
 
-/* Banner Styles */
+/* Banner Section Styles */
 
 .banner-content {
     max-width: 800px;
@@ -74,32 +75,125 @@ nav a {
     font-size: 1rem;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     margin-top: 50px;
     width: 100%;
 }
 
-/* Responsive Styles */
+
+
+/* Main Styles */
+
+/* Teams Section Styles */
+
+main {
+    max-width: 1440px;
+
+    margin: 0 auto;
+}
+
+.teams-container {
+    height: 600px;
+    display: flex;
+    margin: 60px 240px;
+    align-items: center;
+}
+
+.teams-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-image-container img {
+    width: 220px;
+    height: 260px;
+}
+
+.teams-content {
+    padding-left: 60px;
+    padding-right: 0px;
+}
+
+.teams-title {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.teams-desc {
+    margin-bottom: 32px;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* Responsive */
 
 /* Mobile Devices */
 
+
+/* Header Styles */
+
+
+
 @media screen and (max-width: 576px) {
 
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
+
+    /* Main Styles */
+
+
+    @media screen and (max-width: 576px) {
+        .teams-container {
+            flex-direction: column;
+            margin: 30px auto;
+        }
+
+        .teams-image-container img {
+
+            width: 150px;
+            height: 180px;
+        }
+
+        .teams-content {
+            text-align: center;
+            padding: 0;
+        }
+    }
+
 }
+
+/* Resposnsive  */
 
 /* Medium devices */
 
+
+/* header */
+
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
-    header{
+    header {
         padding: 20px;
     }
-    
+
+    /* teams */
+
+    .teams-container {
+        margin: 0;
+    }
+
 }
+
+
+
+/* Medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {}
