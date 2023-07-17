@@ -128,6 +128,106 @@ main {
     font-weight: 400;
 }
 
+/* Feature Section Styles */
+
+/* Facts Section styles */
+
+.facts {
+    margin: 60px 240px;
+}
+
+.facts-title {
+    color: #131313;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.facts-desc {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 542px;
+    margin-bottom: 80px;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    gap: 30px;
+
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 200px;
+
+
+
+}
+
+.card-stats {
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #424242;
+    margin: 10px 0;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #727272;
+    margin: 2px 0;
+}
+
+.card>img {
+    width: 30.221px;
+    height: 30.221px;
+}
+
+/* Sponsors Styles */
+
+.sponsors{
+    text-align: center;
+    
+}
+.sponsor-title{
+    color: #131313;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-top: 150px;
+}
+.sponsor-desc{
+    margin: auto;
+    width: 542px;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+.sponsors-logo-container{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+    
+}
+
+
+
 
 /* Responsive */
 
@@ -169,6 +269,49 @@ main {
         }
     }
 
+    /* Facts Styles */
+
+    .facts {
+        margin: 200px 10px;
+    }
+    .facts-card-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card{
+        width: 300px;
+    }
+    .facts-title{
+        text-align: center;
+    }
+    .facts-desc{
+        width: auto;
+        
+    }
+
+    /* Sponsors styles */
+
+    .sponsors-logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    .sponsor-title{
+        margin-top: 10px;
+    }
+    .sponsor-desc{
+        width: auto;
+    }
+    .logo img{
+        width: auto;
+    }
+    
+
 }
 
 /* Resposnsive  */
@@ -188,6 +331,18 @@ main {
 
     .teams-container {
         margin: 0;
+    }
+
+    /* Facts */
+
+    .facts {
+        margin: 50px 10px;
+    }
+
+    /* Logo */
+
+    .sponsor-title{
+        margin-top: 80px;
     }
 
 }
